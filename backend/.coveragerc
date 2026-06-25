@@ -1,5 +1,11 @@
 [run]
-   omit =
-       venv/*
-       tests/*
-       __init__.py
+source = .
+omit =
+    venv/*
+    tests/*
+    __init__.py
+    */__pycache__/*
+
+[report]
+show_missing = True
+skip_covered = True
